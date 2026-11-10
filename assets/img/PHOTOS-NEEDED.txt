@@ -1,0 +1,44 @@
+Drop photos into this folder using exactly these file names (.jpg).
+Each one appears on the site automatically; until then a labeled placeholder shows.
+Landscape photos work best, except headshot.jpg (square) and about.jpg (portrait).
+
+Home / About
+  headshot.jpg        professional headshot (square crop)
+  about.jpg           a second photo of you (portrait)
+
+HyTech Racing
+  hytech.jpg          the HT11 car
+  hytech-2.jpg        your electrical work (PCB, firmware, test bench)
+  hytech-3.jpg        team or shop photo
+
+Innovation Academy Motorsports
+  ia-racecar.jpg      one of the racecars
+  ia-racecar-2.jpg    wiring or battery system
+  ia-racecar-3.jpg    chassis build or race day
+
+FPV drones
+  fpv-drone.jpg       drone 1
+  fpv-drone-2.jpg     drone 2 or a build close-up
+  betaflight.jpg      Betaflight screenshot
+
+Gimbal
+  gimbal.jpg          finished gimbal
+  gimbal-cad.jpg      CAD screenshot
+  gimbal-2.jpg        electronics / controller
+
+Game controller
+  controller.jpg      finished controller
+  controller-cad.jpg  casing CAD screenshot
+  controller-2.jpg    internal wiring
+
+CO2 dragster
+  co2-dragster.jpg    finished dragster
+  co2-cfd.jpg         CFD simulation screenshot
+  co2-dragster-2.jpg  prototypes
+
+Discovery Project (discovery-1.jpg must be a photo you took or made yourself)
+  discovery-1.jpg
+  discovery-2.jpg
+  discovery-3.jpg
+
+If you did not take a photo yourself, tell Claude who to credit.

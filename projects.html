@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Sid Chintalapalli</title>
+  <meta name="description" content="Engineering projects by Sid Chintalapalli: HyTech Racing, electric racecars, FPV drones, a camera gimbal, an Arduino game controller and a CO2 dragster.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23eaaa00'/%3E%3Ctext x='16' y='21' font-family='monospace' font-size='13' font-weight='700' text-anchor='middle' fill='%230a0d12'%3ESC%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">Portfolio</div>
+        <h1>Things I've designed, built and tested.</h1>
+        <p>From racecar firmware to drones and 3D-printed hardware. Each project covers the problem, my role, how I built it and what came out of it.</p>
+      </div>
+    </section>
+
+    <section style="padding-bottom:40px">
+      <div class="container">
+        <a class="cta-band reveal" href="discovery.html" style="color:inherit;text-decoration:none">
+          <div>
+            <div class="eyebrow">Featured · ECE 1100</div>
+            <h2>Discovery Project Feature</h2>
+            <p>My semester-long Discovery Project: the problem, the process and the outcome.</p>
+          </div>
+          <span class="btn btn-primary">Read the feature →</span>
+        </a>
+      </div>
+    </section>
+
+    <section style="padding-bottom:80px">
+      <div class="container">
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="filter-btn" data-filter="all" aria-pressed="true">All projects</button>
+          <button class="filter-btn" data-filter="automotive" aria-pressed="false">Automotive</button>
+          <button class="filter-btn" data-filter="aviation" aria-pressed="false">Aviation &amp; drones</button>
+          <button class="filter-btn" data-filter="embedded" aria-pressed="false">Embedded &amp; electronics</button>
+          <button class="filter-btn" data-filter="design" aria-pressed="false">CAD &amp; fabrication</button>
+        </div>
+
+        <!-- ================= HyTech Racing =================
+             To add a new project: copy one <article class="project"> block,
+             change its id, data-tags, text and image file names. -->
+        <article class="project reveal" id="hytech" data-tags="automotive embedded">
+          <div class="project-media">
+            <figure class="media" style="margin:0"><img src="assets/img/hytech.jpg" alt="HyTech Racing HT11 electric racecar"></figure>
+            <div class="media-row">
+              <figure class="media" style="margin:0"><img src="assets/img/hytech-2.jpg" alt="HyTech electrical work, such as a PCB or firmware"></figure>
+              <figure class="media" style="margin:0"><img src="assets/img/hytech-3.jpg" alt="HyTech team or shop photo"></figure>
+            </div>
+          </div>
+          <div>
+            <div class="chips" style="margin-bottom:14px"><span class="chip gold">Automotive</span><span class="chip">Embedded</span><span class="chip">Team project</span></div>
+            <h2>HyTech Racing: HT11 FSAE Electric Racecar</h2>
+            <div class="project-meta"><span>Georgia Tech</span><span>Electrical Subsystem Team Member</span><span>Aug 2026 – Present</span></div>
+            <p class="lead">HyTech Racing designs and builds a Formula SAE Electric racecar every year to compete against university teams from around the world. I'm on the electrical subteam, which develops the car's low voltage and high voltage systems and the firmware that runs them.</p>
+            <h4>What I work on</h4>
+            <ul>
+              <li><strong>Charging Control Unit unit tests:</strong> writing unit test code that creates a virtual test environment, so firmware can be validated before it's ever flashed to hardware.</li>
+              <li><strong>Dashboard Ethernet:</strong> designing and testing an Ethernet implementation on the rev 9 vehicle dashboard to speed up data transfer and support more demanding display processing.</li>
+              <li><strong>Onboarding projects:</strong> PCB design in Altium and C++ firmware in PlatformIO to collect temperature data.</li>
+            </ul>
+            <h4>Why it matters</h4>
+            <p>On a racecar, a firmware bug found on track costs testing time, and on a high voltage system it can be a safety risk. Testing code virtually before it reaches the car helps the team find problems early and iterate faster.</p>
+            <div class="chips"><span class="chip">C++</span><span class="chip">PlatformIO</span><span class="chip">Altium Designer</span><span class="chip">Ethernet</span><span class="chip">Git / GitFlow</span><span class="chip">Unit Testing</span></div>
+          </div>
+        </article>
+
+        <!-- ================= IA Motorsports ================= -->
+        <article class="project reveal" id="motorsports" data-tags="automotive embedded design">
+          <div class="project-media">
+            <figure class="media" style="margin:0"><img src="assets/img/ia-racecar.jpg" alt="Innovation Academy Motorsports electric racecar"></figure>
+            <div class="media-row">
+              <figure class="media" style="margin:0"><img src="assets/img/ia-racecar-2.jpg" alt="Racecar wiring or battery system"></figure>
+              <figure class="media" style="margin:0"><img src="assets/img/ia-racecar-3.jpg" alt="Chassis build or race day"></figure>
+            </div>
+          </div>
+          <div>
+            <div class="chips" style="margin-bottom:14px"><span class="chip gold">Automotive</span><span class="chip">Electrical</span><span class="chip">Founder</span></div>
+            <h2>Innovation Academy Motorsports: Two Electric Racecars</h2>
+            <div class="project-meta"><span>Founder &amp; Team Lead</span><span>Specialized Electrical Systems</span><span>Jan 2025 – May 2026</span></div>
+            <p class="lead">My high school had never had a motorsports team, so I founded one. We designed and built two Electrathon-style electric racecars with custom aluminum chassis and entered high school racing divisions for the first time.</p>
+            <h4>The problem</h4>
+            <p>We were starting with no team, no car and no previous designs, and the cars had to be safe, efficient and competitive on a limited student budget.</p>
+            <h4>My role and process</h4>
+            <ul>
+              <li>Led the <strong>electrical systems</strong>: designed the battery system, driver controls and all circuit wiring for both cars.</li>
+              <li>Used CAD and <strong>CFD analysis</strong> to shape the chassis and body for better aerodynamics.</li>
+              <li>Worked on chassis manufacturing and welding, the drivetrain and body paneling.</li>
+            </ul>
+            <h4>The outcome</h4>
+            <p>Both cars were completed and raced. The team placed <strong>9th at the state-level competition</strong> and <strong>1st in our local intraschool competition</strong> in its first season. Building these cars is what pointed me toward HyTech Racing.</p>
+            <div class="chips"><span class="chip">Battery Systems</span><span class="chip">Wiring &amp; Harnessing</span><span class="chip">SolidWorks</span><span class="chip">CFD</span><span class="chip">Welding</span></div>
+          </div>
+        </article>
+
+        <!-- ================= FPV Drones ================= -->
+        <article class="project reveal" id="drones" data-tags="aviation embedded">
+          <div class="project-media">
+            <figure class="media" style="margin:0"><img src="assets/img/fpv-drone.jpg" alt="Custom-built FPV drone"></figure>
+            <div class="media-row">
+              <figure class="media" style="margin:0"><img src="assets/img/fpv-drone-2.jpg" alt="Second FPV drone or build close-up"></figure>
+              <figure class="media" style="margin:0"><img src="assets/img/betaflight.jpg" alt="Betaflight configuration screenshot"></figure>
+            </div>
+          </div>
+          <div>
+            <div class="chips" style="margin-bottom:14px"><span class="chip cyan">Aviation</span><span class="chip">Embedded</span><span class="chip">Personal project</span></div>
+            <h2>First Person View (FPV) Drones</h2>
+            <div class="project-meta"><span>Personal project</span><span>Jan – Apr 2025</span></div>
+            <p class="lead">I engineered and programmed two FPV drones from scratch. These are fast, manually flown quadcopters piloted through a live video feed from an onboard camera.</p>
+            <h4>The process</h4>
+            <ul>
+              <li>Selected and assembled the frame, motors, electronic speed controllers, flight controller, radio receiver and video system.</li>
+              <li>Soldered and integrated the electronics for each build.</li>
+              <li>Configured and tuned the flight controller in <strong>Betaflight</strong>, setting up rates, modes and control response for stable, responsive flight.</li>
+            </ul>
+            <h4>The outcome</h4>
+            <p>Two flying drones, and a much better feel for how sensors, control loops and power systems work together in an aircraft. The same skills helped me win <strong>1st place in the TSA State Drone UAV Challenge</strong> and earn my <strong>FAA Part 107</strong> remote pilot license.</p>
+            <div class="chips"><span class="chip">Betaflight</span><span class="chip">Soldering</span><span class="chip">Flight Controllers</span><span class="chip">RF / Video</span><span class="chip">FAA Part 107</span></div>
+          </div>
+        </article>
+
+        <!-- ================= Gimbal ================= -->
+        <article class="project reveal" id="gimbal" data-tags="aviation embedded design">
+          <div class="project-media">
+            <figure class="media" style="margin:0"><img src="assets/img/gimbal.jpg" alt="3D-printed multipurpose camera gimbal"></figure>
+            <div class="media-row">
+              <figure class="media" style="margin:0"><img src="assets/img/gimbal-cad.jpg" alt="Gimbal CAD model"></figure>
+              <figure class="media" style="margin:0"><img src="assets/img/gimbal-2.jpg" alt="Gimbal electronics or controller setup"></figure>
+            </div>
+          </div>
+          <div>
+            <div class="chips" style="margin-bottom:14px"><span class="chip cyan">Aviation</span><span class="chip">CAD</span><span class="chip">Personal project</span></div>
+            <h2>Multipurpose Video Gimbal</h2>
+            <div class="project-meta"><span>Personal project</span><span>Jan – Apr 2025</span></div>
+            <p class="lead">Alongside the drones, I designed a 3D-printed, multipurpose gimbal that keeps a camera steady for smooth video footage.</p>
+            <h4>The process</h4>
+            <ul>
+              <li>Designed the gimbal structure in CAD and iterated on it through several prototypes.</li>
+              <li>Printed the parts on Bambu Lab printers.</li>
+              <li>Programmed and tuned the gimbal's motor controller with <strong>SimpleBGC</strong> so it would hold the camera level.</li>
+            </ul>
+            <h4>The outcome</h4>
+            <p>A working stabilized gimbal, built from my own design, that combines mechanical design, motor control and electronics in one system.</p>
+            <div class="chips"><span class="chip">Fusion 360</span><span class="chip">SimpleBGC</span><span class="chip">Bambu Lab</span><span class="chip">Brushless Motor Control</span></div>
+          </div>
+        </article>
+
+        <!-- ================= Game Controller ================= -->
+        <article class="project reveal" id="controller" data-tags="embedded design">
+          <div class="project-media">
+            <figure class="media" style="margin:0"><img src="assets/img/controller.jpg" alt="Custom Arduino video game controller"></figure>
+            <div class="media-row">
+              <figure class="media" style="margin:0"><img src="assets/img/controller-cad.jpg" alt="Controller casing CAD design"></figure>
+              <figure class="media" style="margin:0"><img src="assets/img/controller-2.jpg" alt="Controller internal wiring"></figure>
+            </div>
+          </div>
+          <div>
+            <div class="chips" style="margin-bottom:14px"><span class="chip">Embedded</span><span class="chip">Arduino</span><span class="chip">Personal project</span></div>
+            <h2>Arduino Video Game Controller</h2>
+            <div class="project-meta"><span>Personal project</span><span>Jan – Mar 2025</span></div>
+            <p class="lead">I built a fully custom video game controller, from the electronics to the case, powered by an Arduino Nano.</p>
+            <h4>The process</h4>
+            <ul>
+              <li>Programmed the Arduino Nano to read the inputs and carry out game operations.</li>
+              <li>Integrated multiple joysticks and buttons and soldered every component by hand.</li>
+              <li>Prototyped the casing through several rounds of CAD design and modification, then 3D printed it on a Bambu Lab X1 Carbon.</li>
+            </ul>
+            <h4>The outcome</h4>
+            <p>A working, comfortable controller and my first complete product, from circuit to firmware to enclosure.</p>
+            <div class="chips"><span class="chip">Arduino Nano</span><span class="chip">C++</span><span class="chip">Soldering</span><span class="chip">CAD</span><span class="chip">3D Printing</span></div>
+          </div>
+        </article>
+
+        <!-- ================= CO2 Dragster ================= -->
+        <article class="project reveal" id="dragster" data-tags="automotive design">
+          <div class="project-media">
+            <figure class="media" style="margin:0"><img src="assets/img/co2-dragster.jpg" alt="CO2 dragster racecar"></figure>
+            <div class="media-row">
+              <figure class="media" style="margin:0"><img src="assets/img/co2-cfd.jpg" alt="CFD simulation of the dragster"></figure>
+              <figure class="media" style="margin:0"><img src="assets/img/co2-dragster-2.jpg" alt="Dragster prototypes"></figure>
+            </div>
+          </div>
+          <div>
+            <div class="chips" style="margin-bottom:14px"><span class="chip gold">Automotive</span><span class="chip">CFD</span><span class="chip">Competition</span></div>
+            <h2>CO2 Dragster Racecar</h2>
+            <div class="project-meta"><span>TSA competition</span><span>Nov 2024 – Mar 2026</span></div>
+            <p class="lead">A lightweight, aerodynamic shell dragster powered by a CO2 cartridge and designed for maximum straight-line speed.</p>
+            <h4>The process</h4>
+            <ul>
+              <li>Designed the body in CAD with a focus on low drag and low weight.</li>
+              <li>Ran <strong>CFD simulations</strong> to compare designs and improve airflow.</li>
+              <li>Built prototypes with woodworking and 3D printing, testing different filaments and print settings.</li>
+            </ul>
+            <h4>The outcome</h4>
+            <p>The final design placed <strong>8th at the TSA State competition</strong>, and it taught me how to iterate using both simulation and physical testing.</p>
+            <div class="chips"><span class="chip">CAD</span><span class="chip">CFD</span><span class="chip">Woodworking</span><span class="chip">3D Printing</span></div>
+          </div>
+        </article>
+
+        <p class="muted mono" style="font-size:0.85rem;text-align:center;margin-top:40px">// More projects will be added here as I work through Georgia Tech.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+</body>
+</html>
