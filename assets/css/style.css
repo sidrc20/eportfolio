@@ -301,7 +301,7 @@ strong { font-weight: 600; color: var(--text); }
 
 /* ---------- telemetry stats: a dash readout ---------- */
 .telemetry {
-  display: grid; grid-template-columns: repeat(5, 1fr);
+  display: grid; grid-template-columns: repeat(4, 1fr);
   background: var(--surface); border: 1px solid var(--line);
   border-top: 3px solid var(--accent);
 }
@@ -325,9 +325,8 @@ strong { font-weight: 600; color: var(--text); }
 }
 @media (max-width: 960px) {
   .telemetry { grid-template-columns: repeat(2, 1fr); }
-  .telemetry > div { border-bottom: 1px solid var(--line-soft); }
+  .telemetry > div:nth-child(-n+2) { border-bottom: 1px solid var(--line-soft); }
   .telemetry > div:nth-child(2n) { border-right: none; }
-  .telemetry > div:last-child { grid-column: span 2; border-bottom: none; }
 }
 
 /* ---------- welcome list ---------- */
