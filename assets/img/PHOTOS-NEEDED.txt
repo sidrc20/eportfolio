@@ -3,8 +3,8 @@ Each one appears on the site automatically; until then a labeled placeholder sho
 Landscape photos work best, except headshot.jpg (square) and about.jpg (portrait).
 
 Home / About
-  headshot.jpg        professional headshot (square crop)
-  about.jpg           a second photo of you (portrait)
+  portrait.jpg        DONE (Home and About)
+  car-show.jpg        DONE (About, Beyond engineering)
 
 HyTech Racing
   hytech.webp         DONE (car on track)
