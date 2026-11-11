@@ -7,7 +7,7 @@ Home / About
   about.jpg           a second photo of you (portrait)
 
 HyTech Racing
-  hytech.jpg          the HT11 car
+  hytech.webp         DONE (car on track)
   hytech-2.jpg        your electrical work (PCB, firmware, test bench)
   hytech-3.jpg        team or shop photo
 
