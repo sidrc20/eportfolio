@@ -7,7 +7,6 @@
     { href: "index.html", label: "Home" },
     { href: "about.html", label: "About" },
     { href: "projects.html", label: "Projects" },
-    { href: "discovery.html", label: "Discovery Project" },
     { href: "career.html", label: "Career Goals" },
     { href: "resume.html", label: "Resume" },
     { href: "contact.html", label: "Contact", cta: true }

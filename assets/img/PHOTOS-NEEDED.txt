@@ -36,9 +36,5 @@ CO2 dragster
   co2-cfd.jpg         CFD simulation screenshot
   co2-dragster-2.jpg  prototypes
 
-Discovery Project (discovery-1.jpg must be a photo you took or made yourself)
-  discovery-1.jpg
-  discovery-2.jpg
-  discovery-3.jpg
 
 If you did not take a photo yourself, tell Claude who to credit.
