@@ -327,6 +327,35 @@ strong { font-weight: 600; }
 .project p { color: var(--ink-2); }
 .project .lead { color: var(--ink); font-size: 1.12rem; }
 
+/* ---------- 3D model viewer ---------- */
+.viewer { grid-column: 1 / -1; padding-top: 22px; border-top: var(--rule); }
+.viewer-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 14px; }
+.viewer-head .eyebrow { margin: 0; }
+.viewer-modes { display: flex; border: var(--rule); }
+.mode-btn {
+  font-family: var(--font-head); font-weight: 700; font-size: 1rem; letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 6px 16px; border: none; border-right: var(--rule-thin); background: var(--paper-hi); color: var(--ink); cursor: pointer;
+}
+.mode-btn:last-child { border-right: none; }
+.mode-btn:hover { background: var(--paper-lo); }
+.mode-btn[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.viewer-stage { position: relative; aspect-ratio: 16 / 7; border: var(--rule); background: var(--paper-hi); overflow: hidden; }
+@media (max-width: 700px) { .viewer-stage { aspect-ratio: 4 / 3; } }
+.viewer-stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; cursor: grab; }
+.viewer-stage canvas:active { cursor: grabbing; }
+.viewer-poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; background: #2b3240; z-index: 2; transition: opacity 0.5s, visibility 0.5s; }
+.viewer.ready .viewer-poster { opacity: 0; visibility: hidden; }
+.viewer-hint {
+  position: absolute; left: 12px; bottom: 12px; z-index: 3; padding: 4px 9px;
+  background: var(--ink); color: var(--paper); font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; pointer-events: none;
+}
+.viewer-tap { display: none; position: absolute; right: 10px; bottom: 10px; z-index: 3; padding: 6px 12px; font-size: 0.9rem; white-space: nowrap; box-shadow: 3px 3px 0 var(--accent); }
+.viewer.ready:not(.interactive) .viewer-tap { display: inline-flex; }
+.viewer.ready:not(.interactive) .viewer-hint, .viewer:not(.ready) .viewer-hint { display: none; }
+.viewer.failed .viewer-modes, .viewer.failed .viewer-hint, .viewer.failed .viewer-tap { display: none; }
+.viewer-foot { display: flex; flex-wrap: wrap; gap: 4px 0; margin: 10px 0 0; font-size: 0.72rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-2); }
+.viewer-foot span + span::before { content: "/"; color: var(--accent); margin: 0 10px; }
+
 /* ---------- timeline ---------- */
 .timeline { position: relative; padding-left: 34px; }
 .timeline::before { content: ""; position: absolute; left: 5px; top: 8px; bottom: 6px; width: 2px; background: var(--ink); }
