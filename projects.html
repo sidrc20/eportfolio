@@ -9,10 +9,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=4">
-  <script src="assets/js/site.js?v=4" defer></script>
+  <link rel="stylesheet" href="assets/css/style.css?v=5">
+  <script src="assets/js/site.js?v=5" defer></script>
   <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
-  <script type="module" src="assets/js/dragster-3d.js?v=4"></script>
+  <script type="module" src="assets/js/dragster-3d.js?v=5"></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -189,7 +189,22 @@
         <!-- ================= CO2 Dragster ================= -->
         <article class="project reveal" id="dragster" data-tags="automotive design">
           <div class="project-media">
-            <figure class="media" style="margin:0;aspect-ratio:4/5"><img src="assets/img/co2-dragster.jpg" alt="3D-printed CO2 dragster shell" style="object-position:50% 45%"></figure>
+            <section class="viewer" data-model="assets/models/dragster.stl" aria-label="Interactive 3D model of the CO2 dragster">
+              <div class="viewer-head">
+                <div class="eyebrow">Interactive 3D model</div>
+                <div class="viewer-modes" role="group" aria-label="Display mode">
+                  <button class="mode-btn" data-mode="solid" aria-pressed="true">Solid</button>
+                  <button class="mode-btn" data-mode="lines" aria-pressed="false">Lines</button>
+                  <button class="mode-btn" data-mode="xray" aria-pressed="false">X-ray</button>
+                </div>
+              </div>
+              <div class="viewer-stage">
+                <span class="viewer-status mono">Loading 3D model…</span>
+                <span class="viewer-hint mono">Drag to rotate</span>
+                <button class="viewer-tap btn btn-primary" type="button">Tap to rotate</button>
+              </div>
+              <p class="viewer-foot mono"><span>253 × 44 × 53 mm overall</span><span>11,340 triangles</span><span>Exported from my CAD model</span></p>
+            </section>
             <a class="media" href="assets/img/co2-drawing.png" target="_blank" rel="noopener" style="display:block;margin:0;aspect-ratio:2000/1413;background:#fff"><img src="assets/img/co2-drawing.png" alt="Dimensioned technical drawing of the CO2 dragster, top and side views, drawn by Sid Chintalapalli" style="object-fit:contain"></a>
             <p class="caption" style="margin:0">Drawing 1: dimensioned top and side views, rev. 4. Click to view full size.</p>
             <a class="media" href="assets/img/co2-drawing-solid.png" target="_blank" rel="noopener" style="display:block;margin:0;aspect-ratio:2000/1413;background:#fff"><img src="assets/img/co2-drawing-solid.png" alt="Solid-view technical drawing of the CO2 dragster with top, front, side and 3D views, drawn by Sid Chintalapalli" style="object-fit:contain"></a>
@@ -214,27 +229,6 @@
             <p>The final design placed <strong>8th at the TSA State competition</strong>, and it taught me how to iterate using both simulation and physical testing.</p>
             <div class="chips"><span class="chip">CAD</span><span class="chip">CFD</span><span class="chip">Woodworking</span><span class="chip">3D Printing</span></div>
           </div>
-          <section class="viewer" data-model="assets/models/dragster.stl" aria-label="Interactive 3D model of the CO2 dragster">
-            <div class="viewer-head">
-              <div class="eyebrow">Interactive 3D model</div>
-              <div class="viewer-modes" role="group" aria-label="Display mode">
-                <button class="mode-btn" data-mode="solid" aria-pressed="true">Solid</button>
-                <button class="mode-btn" data-mode="lines" aria-pressed="false">Lines</button>
-                <button class="mode-btn" data-mode="xray" aria-pressed="false">X-ray</button>
-              </div>
-            </div>
-            <div class="viewer-stage">
-              <img class="viewer-poster" src="assets/img/co2-render-iso.png" alt="Rendered 3D view of the CO2 dragster body">
-              <span class="viewer-hint mono">Drag to rotate</span>
-              <button class="viewer-tap btn btn-primary" type="button">Tap to rotate</button>
-            </div>
-            <p class="viewer-foot mono"><span>253 × 44 × 53 mm overall</span><span>11,340 triangles</span><span>Exported from my CAD model</span></p>
-            <div class="media-row" style="margin-top:18px">
-              <figure class="media" style="margin:0;aspect-ratio:1004/700;background:#2b3240"><img src="assets/img/co2-render-xray.png" alt="See-through render of the dragster showing the wheel and axle mounts inside the body" style="object-fit:contain"></figure>
-              <figure class="media" style="margin:0;aspect-ratio:1004/700;background:#2b3240"><img src="assets/img/co2-render-side.png" alt="Side profile render of the dragster" style="object-fit:contain"></figure>
-            </div>
-            <p class="caption" style="margin:8px 0 0">CAD renders. Left: see-through view of the internal wheel and axle mounts. Right: side profile.</p>
-          </section>
         </article>
 
         <p class="muted mono" style="font-size:0.85rem;text-align:center;margin-top:40px">// More projects will be added here as I work through Georgia Tech.</p>

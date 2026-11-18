@@ -21,6 +21,8 @@ function init(root) {
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
   } catch (e) {
     root.classList.add("failed");
+    const st = root.querySelector(".viewer-status");
+    if (st) st.textContent = "3D view unavailable. See the drawings below.";
     return;
   }
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
@@ -116,7 +118,7 @@ function init(root) {
       start();
     },
     undefined,
-    () => root.classList.add("failed")
+    () => { root.classList.add("failed"); const st = root.querySelector(".viewer-status"); if (st) st.textContent = "3D view unavailable. See the drawings below."; }
   );
 
   function setMode(mode) {
